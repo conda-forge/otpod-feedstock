@@ -1,4 +1,4 @@
-{% set version = "0.2" %}
+{% set version = "0.3" %}
 
 package:
   name: otpod
@@ -7,23 +7,17 @@ package:
 source:
   fn: otpod-{{ version }}.tar.gz
   url: https://github.com/openturns/otpod/archive/v{{ version }}.tar.gz
-  sha256: 873fc73f3c31cb8561bf51ac665df15a9c9122148a9cb8d2664baba1fdb21579
+  sha256: 68c5512d68de2beb70860c5747dfc14f18e54da28f03c57beb81377afdadff50
 
 build:
   number: 0
+  noarch: python
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
   build:
     - setuptools
     - python
-    # todo: do not import module and its dependencies in setup.py
-    # fixed for next release by https://github.com/openturns/otpod/commit/61f98f3ed0640aafb464d29c8a1bbccf893977d3
-    - openturns >=1.6
-    - matplotlib >=1.5
-    - scikit-learn >=0.17
-    - statsmodels >=0.6
-    - decorator >=4.0
   run:
     - python
     - openturns >=1.6
@@ -35,8 +29,11 @@ requirements:
 test:
   source_files:
     - test/
+    - doc/
   requires:
     - pytest
+    - nbformat
+    - nbconvert
   commands:
     - py.test test/
   imports:
@@ -45,9 +42,7 @@ test:
 about:
   home: http://openturns.org/
   license: LGPL3
-  # todo: add missing license information
-  # fixed for next release by https://github.com/openturns/otpod/commit/69fa5f92accece3df507c22d70ccd53b18e03481
-  #license_file: COPYING.LESSER
+  license_file: COPYING.LESSER
   summary: A module to build Probability of Detection for Non Destructive Testing
 
 extra:
