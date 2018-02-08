@@ -34,7 +34,7 @@ test:
     - nbformat
     - nbconvert
   commands:
-    - py.test test/
+    - py.test test/  # [not osx]
   imports:
     - otpod
 
