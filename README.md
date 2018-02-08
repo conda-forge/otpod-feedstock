@@ -14,7 +14,9 @@ Summary: A module to build Probability of Detection for Non Destructive Testing
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/otpod-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/otpod-feedstock)
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/otpod-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/otpod-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/otpod-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/otpod-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/otpod-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/otpod-feedstock/branch/master)
 
 Current release info
 ====================
