@@ -1,4 +1,4 @@
-{% set version = "0.3" %}
+{% set version = "0.4" %}
 
 package:
   name: otpod
@@ -7,10 +7,10 @@ package:
 source:
   fn: otpod-{{ version }}.tar.gz
   url: https://github.com/openturns/otpod/archive/v{{ version }}.tar.gz
-  sha256: 68c5512d68de2beb70860c5747dfc14f18e54da28f03c57beb81377afdadff50
+  sha256: d051a48227e7d387cb3cdd6c6368c5173b85e6ac08e82291316637266f63863b
 
 build:
-  number: 2
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
