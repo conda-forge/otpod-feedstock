@@ -10,7 +10,7 @@ source:
   sha256: d051a48227e7d387cb3cdd6c6368c5173b85e6ac08e82291316637266f63863b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
@@ -19,6 +19,7 @@ requirements:
     - pip
     - setuptools
     - python
+    - openturns
   run:
     - python
     - openturns
