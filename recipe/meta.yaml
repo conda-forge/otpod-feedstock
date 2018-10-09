@@ -7,7 +7,7 @@ package:
 source:
   fn: otpod-{{ version }}.tar.gz
   url: https://github.com/openturns/otpod/archive/v{{ version }}.tar.gz
-  sha256: aeb09cd9b85ca6ca05e74703eef37630ba7324ccc72efff131dd8036e619874a
+  sha256: 59180c04188c3f0b5bdcdc8707c493df96952068b52ce7a3011148ac643fa4b0
 
 build:
   number: 0
