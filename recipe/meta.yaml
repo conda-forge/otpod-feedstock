@@ -10,7 +10,7 @@ source:
   sha256: d7caea19483a70e797dca5ade0c65a54535d3644490809a2dd5ade32f64e6139
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
@@ -22,7 +22,7 @@ requirements:
     - openturns
   run:
     - python >=3
-    - matplotlib >=1.5
+    - matplotlib-base >=1.5
     - scikit-learn >=0.17
     - statsmodels >=0.6
     - decorator >=4.0
