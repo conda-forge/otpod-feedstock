@@ -22,6 +22,7 @@ requirements:
     - openturns
   run:
     - python >=3
+    - openturns
     - matplotlib-base >=1.5
     - scikit-learn >=0.17
     - statsmodels >=0.6
