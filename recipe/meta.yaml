@@ -19,10 +19,10 @@ requirements:
     - pip
     - setuptools
     - python >=3
-    - openturns 1.15*
+    - openturns 1.16*
   run:
     - python >=3
-    - openturns 1.15*
+    - openturns 1.16*
     - matplotlib-base >=1.5
     - scikit-learn >=0.17
     - statsmodels >=0.6
