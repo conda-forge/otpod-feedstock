@@ -5,11 +5,9 @@ Home: http://openturns.org/
 
 Package license: LGPL-3.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/otpod-feedstock/blob/master/LICENSE.txt)
 
 Summary: A module to build Probability of Detection for Non Destructive Testing
-
-
 
 Current build status
 ====================
