@@ -1,4 +1,4 @@
-{% set version = "0.6.9" %}
+{% set version = "0.6.10" %}
 
 package:
   name: otpod
@@ -7,7 +7,7 @@ package:
 source:
   fn: otpod-{{ version }}.tar.gz
   url: https://github.com/openturns/otpod/archive/v{{ version }}.tar.gz
-  sha256: 93487af934a3d50febf22c399a07a2d19de3ac6d6623a5ba1a18ab17be40cb11
+  sha256: 8de5b0866a583952b63617c7fc3756d9c4df6507a3a60777f8fdae863affdb5c
 
 build:
   number: 0
@@ -18,11 +18,11 @@ requirements:
   host:
     - pip
     - setuptools
-    - python >=3
-    - openturns >=1.16
+    - python
+    - openturns >=1.18
   run:
-    - python >=3
-    - openturns >=1.16
+    - python >=3.6
+    - openturns >=1.18
     - matplotlib-base >=1.5
     - scikit-learn >=0.17
     - statsmodels >=0.6
