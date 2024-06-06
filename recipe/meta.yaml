@@ -28,6 +28,7 @@ requirements:
     - statsmodels >=0.6
     - decorator >=4.0
 
+
 test:
   source_files:
     - test/
