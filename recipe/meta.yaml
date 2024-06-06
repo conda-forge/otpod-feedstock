@@ -1,4 +1,4 @@
-{% set version = "0.6.10" %}
+{% set version = "0.6.11" %}
 
 package:
   name: otpod
@@ -7,7 +7,7 @@ package:
 source:
   fn: otpod-{{ version }}.tar.gz
   url: https://github.com/openturns/otpod/archive/v{{ version }}.tar.gz
-  sha256: 8de5b0866a583952b63617c7fc3756d9c4df6507a3a60777f8fdae863affdb5c
+  sha256: bdcc5c33e5d0eae2b25705a67bbe7affe5842edcf43c38f0197ed7aa3fa8741a
 
 build:
   number: 0
