@@ -1,5 +1,5 @@
 context:
-  version: "0.6.14"
+  version: "0.6.15"
 
 package:
   name: otpod
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/openturns/otpod/archive/v${{ version }}.tar.gz
-  sha256: 133e039e33473e9f6760e8eadc8186b82bd703b0d4f2cd7ac6cb84ab7693d000
+  sha256: cda27aa937592dcf3d219a4c96c9604881a98053a8349a70ce82e50f234852b9
 
 build:
   number: 0
@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - pip
-    - setuptools
+    - hatchling
     - python ${{ python_min }}.*
   run:
     - python >=${{ python_min }}
@@ -41,7 +41,7 @@ about:
   summary: A module to build Probability of Detection for Non Destructive Testing
   documentation: https://openturns.github.io/otpod/master/
   repository: https://github.com/openturns/otpod
-  
+
 extra:
   recipe-maintainers:
     - adumasphi
